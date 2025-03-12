@@ -7,7 +7,7 @@ const Hero = () => {
   const heroRef = useRef(null);
 
   useEffect(() => {
-    // Add any effect logic here if needed
+    // Add any effect logic here if needed    .
   }, []);
 
   return (
