@@ -41,11 +41,24 @@ const Hero = () => {
             <div className="flex flex-wrap gap-4 mb-8">
               <ResumeButton />
               <a
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 font-medium border border-border rounded-full hover:bg-secondary transition-all duration-300"
+              href="/contact"
+              className="
+                inline-flex 
+                items-center 
+                gap-2 
+                px-6 
+                py-3 
+                font-medium 
+                border 
+                border-border 
+                rounded-full 
+                hover:bg-secondary 
+                transition-all 
+                duration-300
+              "
               >
-                Contact Me
-                <Mail className="w-4 h-4" />
+              Contact Me
+              <Mail className="w-4 h-4" />
               </a>
             </div>
 
