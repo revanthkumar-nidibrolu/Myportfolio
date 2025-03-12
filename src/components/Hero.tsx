@@ -3,16 +3,14 @@ import ResumeButton from "./ResumeButton";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useRef } from "react";
 
+const Hero = () => {
+  const heroRef = useRef(null);
 
+  useEffect(() => {
+    // Add any effect logic here if needed
+  }, []);
 
-  const Hero = () => {
-    const heroRef = useRef(null);
-  
-    useEffect(() => {
-      // Add any effect logic here if needed
-    }, []);
-  
-    return (
+  return (
     <section id="home" className="pt-32 pb-16 md:pt-40 md:pb-24 relative overflow-hidden" ref={heroRef}>
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -43,7 +41,7 @@ import { useEffect, useRef } from "react";
             <div className="flex flex-wrap gap-4 mb-8">
               <ResumeButton />
               <a
-                href="#contact"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-6 py-3 font-medium border border-border rounded-full hover:bg-secondary transition-all duration-300"
               >
                 Contact Me
