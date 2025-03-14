@@ -304,7 +304,7 @@ const Skills = () => {
                 onClick={() => setSelectedCertificate(certificate)}
                 size="sm"
               >
-                <div className="h-24 -mx-4 -mt-4 mb-3 overflow-hidden">
+                <div className="h-25 -mx-4 -mt-4 mb-3 overflow-hidden">
                   <img 
                     src={certificate.image} 
                     alt={certificate.title}

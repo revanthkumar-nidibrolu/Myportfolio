@@ -7,10 +7,10 @@ const experiences = [
   {
     company: "Cognifyz Technologies Company",
     period: "Nov 2024 - Jan 2025",
-    title: "Data Analyst",
+    title: "Power BI Intern",
     description: [
       "Using Power BI, SQL, DAX, Power Query, Data Modeling, Data Visualization.",
-      "Designed and implemented interactive Power BI dashboards to track KPIs and improve reporting efficiency.",
+      "Designed and implemented interactive Power BI dashboards to improve reporting efficiency.",
       "Reduced reporting time and provided actionable insights to support business strategies."
     ],
     skills: [
@@ -22,7 +22,7 @@ const experiences = [
   {
     company: "All India Council for Technical Education",
     period: "Oct 2024 - Dec 2024",
-    title: "Statistics Analyst",
+    title: "Statistics Analyst Intern",
     description: [
       "Performed statistical analysis to identify trends and patterns within various datasets.",
       "Conducted structural assessments of engineering designs, performed load calculations, and analyzed stress-strain behavior using software tools like AutoCAD and ANSYS.",
@@ -41,7 +41,8 @@ const experiences = [
     description: [
       "Developed predictive models using Python to enhance the accuracy of data-driven decisions.",
       "Worked on the application of machine learning algorithms to improve data processing efficiency.",
-      "Delivered a predictive model with accuracy that improved decision-making. Automated data analysis tasks, reducing manual effort."
+      "Delivered a predictive model with accuracy that improved decision-making.",
+      "Automated data analysis tasks reducing manual effort."
     ],
     skills: [
       { name: "Python", icon: <Code className="w-4 h-4" /> },
@@ -65,7 +66,7 @@ const Experience = () => {
             <div 
               key={`exp-${index}`}
               className={`relative mb-12 animate-fade-in ${
-                index % 2 === 0 ? 'md:pr-8 md:text-right md:ml-auto md:mr-1/2' : 'md:pl-8 md:ml-1/2'
+                index % 2 === 0 ? 'md:pr-8 md:text-left md:ml-auto md:mr-1/2' : 'md:pl-8 md:ml-1/2'
               }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >

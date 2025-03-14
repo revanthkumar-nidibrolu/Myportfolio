@@ -7,7 +7,7 @@ const educations = [
   {
     institution: "Kakinada institute of engineering and technology",
     period: "2021 – 2025",
-    degree: "Bachelor's Degree in Computer Science - (Artificial Intelligence and Data Science)",
+    degree: "Bachelor's Degree in Computer Science - (AI&DS)",
     score: "CGPA : 7.46",
     skills: [
       { name: "AI", icon: <Award className="w-4 h-4" /> },
@@ -17,7 +17,7 @@ const educations = [
   {
     institution: "Jagan's Junior College",
     period: "2019 – 2021",
-    degree: "Maths, Physics, Chemistry",
+    degree: "MPC",
     score: "Marks : 917",
     skills: [
       { name: "Mathematics", icon: <School className="w-4 h-4" /> },
@@ -27,7 +27,7 @@ const educations = [
   {
     institution: "Narayana E.M High School",
     period: "2018 – 2019",
-    degree: "State Board of Education",
+    degree: "SSC",
     score: "CGPA : 9.0",
     skills: [
       { name: "General Education", icon: <BookOpen className="w-4 h-4" /> }
@@ -49,20 +49,20 @@ const Education = () => {
             <div 
               key={`edu-${index}`}
               className={`relative mb-12 animate-fade-in ${
-                index % 2 === 0 ? 'md:pr-8 md:text-right md:ml-auto md:mr-1/2' : 'md:pl-8 md:ml-1/2'
+                index % 2 === 0 ? 'md:pr-8 md:text-left md:ml-auto md:mr-1/2' : 'md:pl-8 md:ml-1/2'
               }`}
               style={{ animationDelay: `${index * 200}ms` }}
             >
               {/* Timeline dot */}
-              <div className="absolute top-0 left-6 md:left-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2 z-10"></div>
+              <div className="absolute top-0 left-6 md:-1/2 w-4 h-4 rounded-full bg-primary transform -translate-x-1/2 z-10"></div>
               
               <Card 
-                className="relative z-10"
+                className="relative z-1"
                 glow={true}
                 glowColor="primary"
               >
                 <div className="flex flex-col gap-4">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                  <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
                     <div className="flex items-center gap-3">
                       <div className="p-2 rounded-lg bg-primary/10">
                         <GraduationCap className="w-6 h-6 text-primary" />
