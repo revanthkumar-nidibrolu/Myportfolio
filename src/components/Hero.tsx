@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 import ResumeButton from "./ResumeButton";
+import Link from "next/link"; // Import Link for navigation
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useRef } from "react";
 
@@ -40,12 +41,13 @@ const Hero = () => {
 
             <div className="flex flex-wrap gap-4 mb-8">
               <ResumeButton />
-              <a
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3 font-medium border border-border rounded-full hover:bg-secondary transition-all duration-300"
-              >
-                Contact Me
-                <Mail className="w-4 h-4" />
+              
+              {/* Contact Button */}
+              <a href="/contact">
+                <button className="inline-flex items-center gap-2 px-6 py-3 font-medium border border-border rounded-full hover:bg-secondary transition-all duration-300">
+                  Contact Me
+                  <Mail className="w-4 h-4" />
+                </button>
               </a>
             </div>
 
